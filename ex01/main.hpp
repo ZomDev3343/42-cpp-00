@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   main.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:54:11 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/25 16:52:45 by truello          ###   ########.fr       */
+/*   Updated: 2024/04/25 20:39:01 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MAIN_HPP
-# define MAIN_HPP
+#define MAIN_HPP
 
 #include <iostream>
 #include <string.h>

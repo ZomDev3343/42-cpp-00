@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
+/*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/23 22:52:00 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/25 20:38:08 by tohma            ###   ########.fr       */
+/*   Created: 2024/04/25 20:50:08 by tohma             #+#    #+#             */
+/*   Updated: 2024/04/25 20:50:15 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_H
-#define PHONEBOOK_H
-
 #include "Contact.hpp"
 
-class PhoneBook
+Contact::Contact()
 {
-	private:
-		Contact	_contacts[8];
-		int		_last_contact_id;
+	this->set_empty(true);
+}
 
-		void	_print_contacts(void);
-	public:
-		PhoneBook();
-		~PhoneBook();
-		void	add_contact(void);
-		void	search_contact(void);
-};
-
-#endif
+Contact::~Contact()
+{
+	
+}

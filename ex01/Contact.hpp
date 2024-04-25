@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:52:59 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/25 16:49:36 by truello          ###   ########.fr       */
+/*   Updated: 2024/04/25 20:49:58 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACT_HPP
-# define CONTACT_HPP
+#define CONTACT_HPP
 
 #include "main.hpp"
 
@@ -48,14 +48,5 @@ class Contact
 		void	set_empty(bool empty) { this->_is_empty = empty; }
 
 };
-
-Contact::Contact()
-{
-	set_empty(true);
-}
-
-Contact::~Contact()
-{
-}
 
 #endif

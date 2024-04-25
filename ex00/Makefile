@@ -4,7 +4,6 @@ NAME=cpp00
 FLAGS=-Wall -Werror -Wextra -std=c++98
 
 all:
-	mkdir -p $(shell dirname $(OBJ))
 	make $(NAME)
 
 %.o: %.c
