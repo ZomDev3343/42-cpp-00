@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 14:14:56 by truello           #+#    #+#             */
-/*   Updated: 2024/04/25 16:45:53 by truello          ###   ########.fr       */
+/*   Updated: 2024/04/25 23:44:55 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,40 +25,46 @@ void PhoneBook::add_contact(void)
 {
 	Contact	contact;
 	std::string	line;
-	while (line.empty())
+	while (line.empty() && !std::cin.eof())
 	{
 		std::cout << "Entrez le prenom : ";
 		std::cin >> line;
 		std::cout << std::endl;
 	}
 	contact.set_first_name(line);
-	while (line.empty())
+	while (line.empty() && !std::cin.eof())
 	{
 		std::cout << "Entrez le nom : ";
 		std::cin >> line;
+		std::cin.ignore();
 		std::cout << std::endl;
 	}
 	contact.set_last_name(line);
-	while (line.empty())
+	while (line.empty() && !std::cin.eof())
 	{
 		std::cout << "Entrez le surnom : ";
 		std::cin >> line;
+		std::cin.ignore();
 		std::cout << std::endl;
 	}
 	contact.set_nickname(line);
-	while (line.empty())
+	while (line.empty() && !std::cin.eof())
 	{
 		std::cout << "Entrez le numero de telephone : ";
 		std::cin >> line;
+		std::cin.ignore();
 		std::cout << std::endl;
 	}
 	contact.set_phone_number(line);
-	while (line.empty())
+	while (line.empty() && !std::cin.eof())
 	{
 		std::cout << "Entrez votre plus grand secret : ";
 		std::cin >> line;
+		std::cin.ignore();
 		std::cout << std::endl;
 	}
+	if (line.empty())
+		return ;
 	contact.set_darkest_secret(line);
 	contact.set_empty(false);
 	_contacts[_last_contact_id] = contact;

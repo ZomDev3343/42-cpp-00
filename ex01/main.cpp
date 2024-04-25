@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:53:36 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/25 20:52:01 by tohma            ###   ########.fr       */
+/*   Updated: 2024/04/25 23:45:44 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int	main(void)
 			repertoire.add_contact();
 		else if (prompt != "SEARCH")
 			repertoire.search_contact();
-	}while (prompt != "EXIT");
+	}while (prompt != "EXIT" && !std::cin.eof());
 	return (0);
 }
