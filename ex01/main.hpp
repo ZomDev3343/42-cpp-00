@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
+/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:54:11 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/23 23:04:51 by tohma            ###   ########.fr       */
+/*   Updated: 2024/04/25 16:52:45 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef MAIN_HPP
+# define MAIN_HPP
 
-#include "Contact.hpp"
-#include "PhoneBook.hpp"
 #include <iostream>
 #include <string.h>
+
+#endif

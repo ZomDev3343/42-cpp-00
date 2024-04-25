@@ -3,28 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
+/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:52:00 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/23 23:05:13 by tohma            ###   ########.fr       */
+/*   Updated: 2024/04/25 16:54:19 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+#ifndef PHONEBOOK_H
+# define PHONEBOOK_H
+
+#include "Contact.hpp"
 
 class PhoneBook
 {
 	private:
-		Contact	contacts[8];
+		Contact	_contacts[8];
+		int		_last_contact_id;
+
+		void	_print_contacts(void);
 	public:
 		PhoneBook();
 		~PhoneBook();
+		void	add_contact(void);
+		void	search_contact(void);
 };
 
-PhoneBook::PhoneBook()
-{
-}
-
-PhoneBook::~PhoneBook()
-{
-}
+#endif
