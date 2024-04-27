@@ -1,6 +1,6 @@
 SRC=$(shell find -name \*.cpp -type f -print)
 OBJ=$(patsubst %.cpp, %.o,$(SRC))
-NAME=cpp00
+NAME=megaphone
 FLAGS=-Wall -Werror -Wextra -std=c++98
 
 all:
@@ -13,7 +13,7 @@ $(NAME): $(OBJ)
 	c++ $(FLAGS) $(OBJ) -g -o $@
 
 clean:
-	find ./obj -name \*.o -type f -delete
+	find . -name \*.o -type f -delete
 
 fclean: clean
 	rm -rf $(NAME)
