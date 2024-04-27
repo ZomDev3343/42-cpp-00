@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:52:00 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/25 20:38:08 by tohma            ###   ########.fr       */
+/*   Updated: 2024/04/27 19:51:43 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class PhoneBook
 		Contact	_contacts[8];
 		int		_last_contact_id;
 
+		void	_print_contact(int id);
 		void	_print_contacts(void);
 	public:
 		PhoneBook();
