@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 14:14:56 by truello           #+#    #+#             */
-/*   Updated: 2024/04/27 20:28:02 by tohma            ###   ########.fr       */
+/*   Updated: 2024/04/27 20:35:15 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void PhoneBook::add_contact(void)
 		this->_last_contact_id = 0;
 }
 
-static void	print_field(const std::string &field)
+void	PhoneBook::_print_field(const std::string &field)
 {
 	int	space_amount = 10 - field.length();
 	int	i;
@@ -110,13 +110,13 @@ void	PhoneBook::_print_contacts(void)
 		std::cout << (i % 11 == 0 ? "|" : "-");
 	std::cout << std::endl;
 	std::cout << "|";
-	print_field("ID");
+	this->_print_field("ID");
 	std::cout << "|";
-	print_field("PRENOM");
+	this->_print_field("PRENOM");
 	std::cout << "|";
-	print_field("NOM");
+	this->_print_field("NOM");
 	std::cout << "|";
-	print_field("SURNOM");
+	this->_print_field("SURNOM");
 	std::cout << "|";
 	std::cout << std::endl;
 	for (int i = 0; i < 45; i++)
@@ -128,13 +128,13 @@ void	PhoneBook::_print_contacts(void)
 		if (!contact.is_empty())
 		{
 			std::cout << "|";
-			print_field(std::to_string(i));
+			this->_print_field(std::to_string(i));
 			std::cout << "|";
-			print_field(contact.first_name());
+			this->_print_field(contact.first_name());
 			std::cout << "|";
-			print_field(contact.last_name());
+			this->_print_field(contact.last_name());
 			std::cout << "|";
-			print_field(contact.nickname());
+			this->_print_field(contact.nickname());
 			std::cout << "|";
 			std::cout << std::endl;
 			for (int i = 0; i < 45; i++)

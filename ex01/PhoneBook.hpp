@@ -6,7 +6,7 @@
 /*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:52:00 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/27 19:51:43 by tohma            ###   ########.fr       */
+/*   Updated: 2024/04/27 20:34:34 by tohma            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class PhoneBook
 
 		void	_print_contact(int id);
 		void	_print_contacts(void);
+		void	_print_field(const std::string &field);
 	public:
 		PhoneBook();
 		~PhoneBook();
