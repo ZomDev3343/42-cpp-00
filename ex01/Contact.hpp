@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tohma <tohma@student.42.fr>                +#+  +:+       +#+        */
+/*   By: truello <truello@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:52:59 by tohma             #+#    #+#             */
-/*   Updated: 2024/04/25 23:53:22 by tohma            ###   ########.fr       */
+/*   Updated: 2024/05/16 13:52:49 by truello          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
-#include "main.hpp"
+#include <iostream>
+#include <string.h>
 
 class Contact
 {
